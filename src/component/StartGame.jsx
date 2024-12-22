@@ -39,4 +39,13 @@ const Button = styled.button`
     min-width: 200px;
     border: none;
     font-size: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #white;
+      border: 1px solid black;
+      color: black;
+      transition: 0.3s ease-in;
+    }
 `;
