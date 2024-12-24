@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-const StartGame = () => {
+const StartGame = ({toggle}) => {
   return (
     <Container>
       <div>
       <img src="images/dices.png" alt="logo" />
       </div>
       <div className="content">
-        <h1>Raijin Dice Game</h1>
-        <Button>Start Game</Button>
+        <h1>Raijin Dice</h1>
+        <Button onClick={toggle}>Play Game</Button>
       </div>
     </Container>
   )
@@ -27,6 +27,7 @@ const Container = styled.div`
       h1{
         font-size: 90px;
         white-space: nowrap;
+        margin-bottom: 10px;
       }
     }
 `;
@@ -43,7 +44,7 @@ const Button = styled.button`
     cursor: pointer;
 
     &:hover {
-      background-color: #white;
+      background-color: white;
       border: 1px solid black;
       color: black;
       transition: 0.3s ease-in;
