@@ -1,14 +1,25 @@
 import React from 'react'
 import TotalScore from '/src/components/TotalScore';
 import SelectNumber from './SelectNumber';
+import styled from "styled-components";
 
 const GameOn = () => {
   return (
-    <main>
+    <MainContainer>
+     <div className='top'>
       <TotalScore />
       <SelectNumber/>
-    </main>
+     </div>
+    </MainContainer>
     )
 }
 
 export default GameOn
+
+const MainContainer = styled.div`
+.top{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+`;

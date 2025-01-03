@@ -8,3 +8,4 @@ Dice Game using React
     Day 4: Styled StartGame Page and toggle using useState
     Day 5: Created GameOn and TotalScore component and styled them
     Day 6: Updated GameOn and TotalScore component and created SelectNumber Component
+    Day 7: Styled SelectNumber Component
