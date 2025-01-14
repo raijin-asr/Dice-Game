@@ -2,6 +2,7 @@ import React from 'react'
 import TotalScore from '/src/components/TotalScore';
 import SelectNumber from './SelectNumber';
 import styled from "styled-components";
+import DiceRoll from './DiceRoll';
 
 const GameOn = () => {
   return (
@@ -10,6 +11,7 @@ const GameOn = () => {
       <TotalScore />
       <SelectNumber/>
      </div>
+     <DiceRoll/>
     </MainContainer>
     )
 }
@@ -17,6 +19,8 @@ const GameOn = () => {
 export default GameOn
 
 const MainContainer = styled.div`
+padding-top: 100px;
+
 .top{
   display: flex;
   justify-content: space-around;

@@ -29,7 +29,7 @@ export default SelectNumber
 const NumberContainer = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
+align-items: end;
 
 .flex{
   display:flex;
